@@ -7,15 +7,9 @@ addEventListener("fetch", (event) => {
       protocol: "https",
       port: "443",
     },
-    optimization: {
-      mirage: true,
-    },
     cors: {
       origin: "*",
       methods: ["GET", "POST"],
-    },
-    rewrite: {
-      cookie: true,
     },
   };
   const proxy = useProxy();
